@@ -1,0 +1,55 @@
+/* 全体のベース設定 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background-color: #f7f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* タイトル */
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* 実行ボタン */
+#runBtn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#runBtn:hover {
+  background-color: #2980b9;
+}
+
+/* 出力結果のリスト */
+#output {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+#output li {
+  padding: 10px 16px;
+  border-bottom: 1px solid #eee;
+}
+
+#output li:last-child {
+  border-bottom: none;
+}
